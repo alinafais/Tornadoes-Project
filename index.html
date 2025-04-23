@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tracking Changing Trends in Twisters and Storms </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="nav-container">
+      <div class="logo">National Oceanic and Atmospheric Administration (NOAA)</div>
+      <nav class="menu">
+        <a href="https://gis-fema.hub.arcgis.com/datasets/e75412d18bdc469dbf89bf7e929475cc_0/about" target="_blank" class="active">DATA</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Tracking Changing Trends in Twisters and Storms</h1>
+      <p class="subtitle">
+        Explorable Explainer on Changes in Tornado and Storm Activity Over the Decades
+      </p>
+      <p class="subtext">
+        <strong>From Twisters to Tornado Alley:</strong> Tornadoes aren’t just a weather event — they are a force that shapes communities, challenges emergency systems, and rewrites maps. With over three decades of patterns and pressure fronts, the U.S. remains the global epicenter of twister activity, offering a dramatic look at nature’s most unpredictable show
+      </p>
+    </div>
+  </section>
+
+  <!-- Author Line -->
+  <section class="author-block">
+    <p>
+      By <span class="author">Alina Faisal</span>, <span class="author">Aaron Bartlett</span>,
+      <span class="author">Valeria Fraga</span><br>
+      <span class="date">April 23, 2025</span>
+    </p>
+  </section>
+
+<!-- Blog article content -->
+<main class="article">
+    <div class="container">
+      <!-- Blog paragraphs -->
+      <p class="dropcap">
+        <span class="big-t">T</span>ornadoes are among the most unpredictable and destructive natural disasters in the United States, swirling columns of air capable of leveling buildings, tossing vehicles, and reshaping communities within moments. Each year, they carve through communities, disrupt lives, and challenge the country’s preparedness infrastructure.
+      </p>
+  
+      <p class="highlight-blue">
+        But what do decades of storm data actually reveal? Is Tornado Alley shifting? Are storms becoming stronger, more frequent, or striking new regions entirely?
+      </p>
+  
+      <p style="margin-bottom: 5px;">
+        In this explorable explainer, we delve into more than thirty years of violent storm records, drawing from NOAA, FEMA, and global storm-tracking resources to paint a clearer picture of how tornado activity is evolving. From the heart of Oklahoma to unexpected outbreaks in the Southeast, the data shows emerging trends and surprising hotspots. By combining interactive visuals with expert insights, we aim to empower readers, emergency planners, and policymakers with knowledge that goes beyond headlines — exploring how climate, geography, and human response intertwine in the face of nature’s fiercest winds.
+      </p>
+
+      <p>What the data ultimately reveals is that tornado behavior in the U.S. is both consistent in its intensity and dynamic in its geography. While regions like Texas, Oklahoma, and Kansas have long held the spotlight as part of “Tornado Alley,” recent decades suggest a shifting reality. Tornadoes are increasingly being reported in the Southeast, parts of the Midwest, and even extending into areas once considered relatively low-risk. This shift raises important questions about how climate variability, urban expansion, and atmospheric dynamics influence storm paths and severity.
+        Tornado formation is deeply tied to geography: where warm, humid Gulf air meets cooler, drier air from the Rockies or Canada, creating the instability needed for supercell storms. But beyond meteorological ingredients, human exposure has changed. As more communities expand into storm-prone zones, the stakes rise—not just in terms of damage, but in terms of lives, logistics, and infrastructure. </p>
+        
+      <p>Understanding these patterns is no longer the sole responsibility of meteorologists.
+        They are equally critical for emergency managers, urban planners, educators, and everyday citizens.
+        Tornadoes don’t just reshape landscapes—they redefine the boundaries of vulnerability.
+        In a warming and expanding nation, knowing where and why they strike is essential for building resilience.</p>
+    </div>
+</main>
+
+<!-- Outside the main container for full width (top right/left bottom)-->
+ <section style="width: 100%; background-color: #e6f7ff; padding: 5px 0 40px 0; text-align: center;">
+    <iframe 
+      src="tornado_visualization.html"
+      width="100%"
+      height="820"
+      style="border: none; max-width: 1200px;"
+      title="Interactive Tornado Trends Visualization">
+    </iframe>
+  </section>
+
+<!-- Blog article content -->
+ <main class="article">
+    <div class="container" style="font-family: 'Georgia', serif; font-size: 17px; line-height: 1.75; color: #2c2c2c;">
+  
+      <p style="margin-top: 40px;">
+        <strong>Visualization shows a U.S. map and bar chart with an interactive slider,
+            offering a view of tornado distribution and trends across time and geography.</strong>
+      </p>
+  
+      <h3 style="margin-top: 40px;">Choropleth Map of Tornado Frequency:</h3>
+      <p>Visualizes tornado counts for each state between 1950 and 2022:</p>
+      <ul style="margin-top: 8px; padding-left: 20px;">
+        <li>Darker shades of bluerepresent states with higher tornado activity.</li>
+        <li>Hovering over a state reveals its name and total tornado count.</li>
+        <li>Shows Texas as the most tornado-prone state with over 9,000 tornadoes.</li>
+        <li>Highlights the core of “Tornado Alley”.</li>
+        <li>Captures lesser-known regions impacted by tornadoes.</li>
+      </ul>
+  
+      <h3 style="margin-top: 40px;">Top 20 States by Tornado Count:</h3>
+      <p>Ranks states based on total tornado frequency:</p>
+      <ul style="margin-top: 8px; padding-left: 20px;">
+        <li>States are sorted from highest to lowest tornado count.</li>
+        <li>Vertical line indicates the national average (initially set at 2,797 tornadoes).</li>
+        <li>Compares states that exceed or fall below the national threshold.</li>
+        <li>Identifies regions with unexpectedly high tornado counts like Florida or Illinois.</li>
+      </ul>
+  
+    </div>
+  </main>
+
+
+
+</body>
+</html>

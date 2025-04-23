@@ -1,0 +1,165 @@
+body {
+    background-color: #e6f7ff;
+    margin: 0;
+    font-family: 'Georgia', serif;
+  }
+  
+  main.article, .container {
+    background-color: #e6f7ff;
+  }
+  
+  .topbar {
+    background-color: #174c4f;
+    color: white;
+    padding: 12px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #b3f5e6;
+  }
+  
+  .menu a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .menu .active {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+  }
+  
+  .menu .lang {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 3px;
+  }
+  
+  /* .hero {
+    background: #002d5c;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  } */
+  
+  .data-label {
+    color: #d2ff00;
+    font-size: 0.85rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0 20px;
+  }
+  
+  .subtitle {
+    max-width: 1000px; /* previously 600px */
+    margin: 0 auto;
+    color: #dcdcdc;
+    font-size: 1.05rem;
+  }
+  
+  .author-block {
+    text-align: center;
+    padding: 30px 20px 10px;
+    font-size: 0.95rem;
+  }
+  
+  .author {
+    color: #1299a5;
+    font-weight: bold;
+  }
+  
+  .date {
+    display: block;
+    color: #e3812c;
+    margin-top: 6px;
+  }
+
+  .hero {
+    position: relative;
+    background-color: #0c2e5a;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    overflow: hidden;
+  }
+  
+  .hero::before {
+    content: "";
+    background: url('hurricane-58025_1280.jpg') center/cover no-repeat;
+    opacity: 0.08; /* Light watermark effect */
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .subtext {
+    font-size: 1rem;
+    color: #d4d4d4;
+    max-width: 750px;
+    margin: 30px auto 0; /* Increased top margin from 10px to 25px */
+    line-height: 1.7;
+  }
+
+  .article {
+    padding: 20px 20px 40px;
+    font-family: Georgia, serif;
+    color: #222;
+    background-color: #fff;
+  }
+  
+  .article .container {
+    max-width: 720px; /* Previously 800px */
+    margin: 0 auto;
+    text-align: justify;
+  }
+  
+  .article p {
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+    line-height: 2;  /* Increased line height for breathing space */
+    letter-spacing: 0.1px;
+  }
+  
+  .dropcap {
+    text-align: justify;
+  }
+  
+  .big-t {
+    font-size: 3.5rem;
+    float: left;
+    line-height: 1;
+    padding-right: 8px;
+    font-weight: bold;
+    color: #0c2e5a;
+  }
+  .highlight-blue {
+    color: #0a5c8e; /* A rich, readable blue */
+    font-weight: 500;
+  }
