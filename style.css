@@ -163,3 +163,46 @@ body {
     color: #0a5c8e; /* A rich, readable blue */
     font-weight: 500;
   }
+  .tornado-track-section {
+    background-color: #e6f7ff;
+    padding: 40px 20px;
+  }
+  
+  .tornado-track-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Georgia, serif;
+    color: #2c2c2c;
+    line-height: 1.75;
+    font-size: 17px;
+  }
+  
+  .tornado-track-text {
+    margin-top: 30px;
+    text-align: justify;
+  }
+  
+  .tornado-track-text a {
+    color: #0a5c8e;
+    text-decoration: underline;
+  }
+  .footer {
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.95rem;
+    background-color: #174c4f;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #fefefe;
+  }
+  
+  .footer a {
+    color: #fefefe;
+    text-decoration: none;
+    font-weight: 500;
+  }
