@@ -70,9 +70,9 @@
     <iframe 
       src="tornado_visualization.html"
       width="100%"
-      height="820"
-      style="border: none; max-width: 1200px;"
-      title="Interactive Tornado Trends Visualization">
+      height="600"
+      style="border: none; max-width: 1300px;"
+      title="Strong Tornado Tracks in the U.S. (1950s–2020s):">
     </iframe>
   </section>
 
@@ -80,15 +80,14 @@
  <main class="article">
     <div class="container" style="font-family: 'Georgia', serif; font-size: 17px; line-height: 1.75; color: #2c2c2c;">
   
-      <p style="margin-top: 40px;">
-        <strong>Visualization shows a U.S. map and bar chart with an interactive slider,
-            offering a view of tornado distribution and trends across time and geography.</strong>
-      </p>
+        <p style="margin-top: 40px; text-align: center; font-weight: normal; color: grey;">
+            Figure 1. Interactive visualization of U.S. tornado patterns from 1950–2022, highlighting high-risk states and shifting storm trends
+        </p>
   
       <h3 style="margin-top: 40px;">Choropleth Map of Tornado Frequency:</h3>
       <p>Visualizes tornado counts for each state between 1950 and 2022:</p>
       <ul style="margin-top: 8px; padding-left: 20px;">
-        <li>Darker shades of bluerepresent states with higher tornado activity.</li>
+        <li>Darker shades of blue represent states with higher tornado activity.</li>
         <li>Hovering over a state reveals its name and total tornado count.</li>
         <li>Shows Texas as the most tornado-prone state with over 9,000 tornadoes.</li>
         <li>Highlights the core of “Tornado Alley”.</li>
@@ -105,8 +104,120 @@
       </ul>
   
     </div>
+ </main>
+
+<!-- Tornado Tracks Visualization Section -->
+<section class="tornado-track-section">
+    <div class="tornado-track-container">
+      <div class="tornado-track-iframe">
+        <iframe 
+          src="tornadoes_dashboard.html"
+          width="100%"
+          height="600"
+          style="border: none; max-width: 1000px;"
+          title="Strong Tornado Tracks in the U.S.">
+        </iframe>
+      </div>
+      
+      <div class="tornado-track-text">
+        <p style="margin-top: 30px; text-align: center; font-weight: normal; color: grey;">
+          Figure 2. Captures the evolution of strong tornado activity across the United States from the 1950s to the 2020s.
+          Tracks are color-coded using the Enhanced Fujita (EF) Scale, where yellow represents EF1 (mildest) and dark red represents EF5 (most violent). The density of tracks shows the highest concentration of powerful tornadoes in states
+          like Alabama, Mississippi, and parts of the Midwest
+        </p>
+        <p>
+          These storms are not just high winds—they cause lasting devastation. Over this 70-year span, nearly 1,000 people have lost their lives and more than 21,000 have been injured due to tornadoes in the U.S. Historic tornadoes like the 2011 Joplin EF5 (158 fatalities) and the 1974 Super Outbreak (30 F4/F5 tornadoes) illustrate the intensity and unpredictability of these events.
+        </p>
+        <p>
+          As seen here, tornado risks have extended into regions once considered less vulnerable. This reinforces the need for advanced warning systems, resilient infrastructure, and community-level preparedness.
+          <br><br>
+          <em>Source: </em> 
+          <a href="https://storymaps.arcgis.com/stories/abe679ce16b64112b7636640b3dad0a3" target="_blank">
+            ArcGIS StoryMap by Esri: Strong Tornadoes in the U.S.
+          </a>
+        </p>
+
+        <p>
+            Between 1950 and 2022, the United States has experienced over 65,000 recorded tornadoes, making it the most tornado-prone country in the world. The central U.S.—especially regions within Tornado Alley—has borne the brunt of these events, with thousands of communities facing the impacts of rapid-onset storms. Tornadoes have not only claimed lives and injured tens of thousands, but also caused billions in economic losses, displacing families and damaging critical infrastructure. Events like the Moore, Oklahoma tornado in 2013 and the 2021 Kentucky outbreak underscore the need for continued investment in early warning systems, weather modeling, and disaster preparedness. As climate patterns evolve, understanding historical tornado behavior provides critical context for forecasting future threats.
+            <br><br>
+            <em>Source: </em>
+            <a href="https://www.ncdc.noaa.gov/billions/events/US/1980-2022" target="_blank">
+              NOAA National Centers for Environmental Information: Billion-Dollar Weather and Climate Disasters (1980–2022)
+            </a>
+        </p>
+      </div>
+    </div>
+</section>
+<!-- bar chart -->
+<section style="width: 100%; background-color: #e6f7ff; padding: 5px 0 10px 0; text-align: center;">
+    <iframe 
+      src="bar_chart.html"
+      width="100%"
+      height="800"
+      style="border: none; max-width: 1100px;"
+      title="Comparison of Tornado Metrics Across States and Time Periods">
+    </iframe>
+</section>
+
+<main class="article">
+    <div class="container" style="font-family: 'Georgia', serif; font-size: 17px; line-height: 1.75; color: #2c2c2c;">
+  
+     <p style="margin-top: 0; text-align: center; font-weight: normal; color: grey; font-style: italic;">
+        Figure 3. Comparison of Tornado Metrics Across Two States and Time Periods (1950–1985 vs. 1986–2022)
+      </p>
+  
+      <p>
+        This interactive dashboard enables users to compare tornado-related injuries, fatalities, and storm magnitude across two U.S. states over two distinct time periods. By adjusting the dropdown menus, readers can analyze trends for any combination of states.
+      </p>
+  
+      <p>
+        Such comparative views help inform emergency management strategies, resource allocation, and public education efforts. State-level shifts are important to monitor as climate variability continues to influence storm behavior and vulnerability.
+      </p>
+  
+      <p style="font-style: italic; margin-top: 20px; margin-bottom: 0;">
+        Source: 
+        <a href="https://www.ncdc.noaa.gov/stormevents/" target="_blank">
+          NOAA Storm Events Database
+        </a>
+      </p>
+  
+    </div>
+</main>
+
+<!-- last paragraph-->
+<main class="article">
+    <div class="container">
+      <h3 style="margin-top: 20px;">Tornado Metrics and Long-Term Impact (1950–2022)</h3>
+      <p>
+        Tornado metrics across U.S. states from 1950 to 2022 show significant regional variation in magnitude, fatalities, and injuries.
+        While tornado-prone states like Alabama consistently report high injury and fatality numbers, less frequently affected states still experience severe outcomes during major events.
+        Tornadoes are measured using the Enhanced Fujita (EF) scale, and even a single EF4 or EF5 tornado can result in catastrophic damage, regardless of the location.
+      </p>
+      <p>
+        The increase in recorded tornadoes and storm intensity over time may partly reflect better tracking and reporting technologies.
+        However, it also corresponds with growing population density in tornado-prone areas, expanding urban development, and possibly climate variability.
+        According to the National Oceanic and Atmospheric Administration (NOAA), tornado-related disasters have contributed to over $100 billion in damages since 1980,
+        with a sharp rise in billion-dollar weather events in the last two decades.
+      </p>
+      <p>
+        This underscores the importance of preparedness policies, building codes, and community awareness programs,
+        especially in vulnerable states and during peak tornado seasons (April to June).
+      </p>
+      <p style="font-style: italic; margin-top: 20px;">
+        Source: 
+        <a href="https://www.ncei.noaa.gov/access/billions/" target="_blank">
+          NOAA Billion-Dollar Weather and Climate Disasters
+        </a>
+      </p>
+    </div>
   </main>
 
+  <!-- Footer -->
+<footer class="footer">
+    <div class="footer-inner">
+      © 2025 · Tracking Tornadoes (NOAA)
+    </div>
+  </footer>
 
 
 </body>
