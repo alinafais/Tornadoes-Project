@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "fill": "white"}, "title": {"anchor": "middle", "color": "navy", "font": "Helvetica", "fontSize": 30}}, "data": {"name": "data-8b89e38ffcef9347b74a787377a2f64d"}, "mark": {"type": "circle", "size": 40, "stroke": "black", "strokeWidth": 0.5}, "background": "#e6f7ff", "encoding": {"color": {"field": "Metric", "scale": {"domain": ["Injuries", "Fatalities", "Property Loss ($M)", "Crop Loss ($M)"], "range": ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728"]}, "type": "nominal"}, "size": {"field": "Value", "scale": {"range": [0, 500]}, "type": "quantitative"}, "tooltip": [{"field": "Date", "type": "temporal"}, {"field": "State", "type": "nominal"}, {"field": "Metric", "type": "nominal"}, {"field": "Value", "type": "quantitative"}, {"field": "id", "type": "ordinal"}], "x": {"axis": {"format": "%Y ", "tickSize": 0}, "field": "Date", "scale": {"range": [1953, 2025]}, "timeUnit": "yearmonth", "title": "Date", "type": "temporal"}, "y": {"field": "Value", "type": "quantitative"}}, "height": 300, "params": [{"name": "param_6", "select": {"type": "point", "fields": ["Metric"]}, "bind": {"input": "select", "options": ["Injuries", "Fatalities", "Property Loss ($M)", "Crop Loss ($M)"], "name": "Select Metric"}, "value": "Injuries"}], "title": "Top 10 Tornadoes in the US by Metric", "transform": [{"filter": {"param": "param_6"}}], "width": 400, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-8b89e38ffcef9347b74a787377a2f64d": [{"id": 19483, "Date": "1979/04/10", "State": "TX", "Metric": "Injuries", "Value": 1740.0}, {"id": 55297, "Date": "2011/04/27", "State": "AL", "Metric": "Injuries", "Value": 1500.0}, {"id": 1058, "Date": "1953/06/09", "State": "MA", "Metric": "Injuries", "Value": 1228.0}, {"id": 15260, "Date": "1974/04/03", "State": "OH", "Metric": "Injuries", "Value": 1150.0}, {"id": 55601, "Date": "2011/05/22", "State": "MO", "Metric": "Injuries", "Value": 1150.0}, {"id": 1055, "Date": "1953/06/08", "State": "MI", "Metric": "Injuries", "Value": 844.0}, {"id": 8104, "Date": "1965/04/11", "State": "IN", "Metric": "Injuries", "Value": 835.0}, {"id": 12412, "Date": "1971/02/21", "State": "MS", "Metric": "Injuries", "Value": 795.0}, {"id": 882, "Date": "1953/05/11", "State": "TX", "Metric": "Injuries", "Value": 597.0}, {"id": 39850, "Date": "1999/05/03", "State": "OK", "Metric": "Injuries", "Value": 583.0}, {"id": 55601, "Date": "2011/05/22", "State": "MO", "Metric": "Fatalities", "Value": 158.0}, {"id": 1055, "Date": "1953/06/08", "State": "MI", "Metric": "Fatalities", "Value": 116.0}, {"id": 882, "Date": "1953/05/11", "State": "TX", "Metric": "Fatalities", "Value": 114.0}, {"id": 1058, "Date": "1953/06/09", "State": "MA", "Metric": "Fatalities", "Value": 94.0}, {"id": 1930, "Date": "1955/05/25", "State": "OK", "Metric": "Fatalities", "Value": 80.0}, {"id": 55281, "Date": "2011/04/27", "State": "AL", "Metric": "Fatalities", "Value": 72.0}, {"id": 55297, "Date": "2011/04/27", "State": "AL", "Metric": "Fatalities", "Value": 64.0}, {"id": 8926, "Date": "1966/03/03", "State": "MS", "Metric": "Fatalities", "Value": 58.0}, {"id": 12412, "Date": "1971/02/21", "State": "MS", "Metric": "Fatalities", "Value": 58.0}, {"id": 66438, "Date": "2021/12/10", "State": "TN", "Metric": "Fatalities", "Value": 57.0}, {"id": 63656, "Date": "2019/10/20", "State": "TX", "Metric": "Property Loss ($M)", "Value": 1550.0}, {"id": 65436, "Date": "2020/03/03", "State": "TN", "Metric": "Property Loss ($M)", "Value": 1504.0}, {"id": 64534, "Date": "2019/05/27", "State": "OH", "Metric": "Property Loss ($M)", "Value": 500.0}, {"id": 63658, "Date": "2019/10/20", "State": "TX", "Metric": "Property Loss ($M)", "Value": 400.0}, {"id": 61309, "Date": "2017/01/22", "State": "GA", "Metric": "Property Loss ($M)", "Value": 310.3}, {"id": 65395, "Date": "2020/03/28", "State": "AR", "Metric": "Property Loss ($M)", "Value": 300.0}, {"id": 65458, "Date": "2020/04/12", "State": "LA", "Metric": "Property Loss ($M)", "Value": 250.0}, {"id": 67960, "Date": "2022/03/05", "State": "IA", "Metric": "Property Loss ($M)", "Value": 220.0}, {"id": 63394, "Date": "2018/07/19", "State": "IA", "Metric": "Property Loss ($M)", "Value": 200.0}, {"id": 64384, "Date": "2019/05/22", "State": "MO", "Metric": "Property Loss ($M)", "Value": 174.01}, {"id": 65476, "Date": "2020/04/12", "State": "MS", "Metric": "Crop Loss ($M)", "Value": 12.25}, {"id": 65479, "Date": "2020/04/12", "State": "MS", "Metric": "Crop Loss ($M)", "Value": 7.701}, {"id": 61354, "Date": "2017/01/02", "State": "GA", "Metric": "Crop Loss ($M)", "Value": 7.5}, {"id": 68481, "Date": "2022/06/14", "State": "NE", "Metric": "Crop Loss ($M)", "Value": 5.0}, {"id": 65473, "Date": "2020/04/12", "State": "MS", "Metric": "Crop Loss ($M)", "Value": 2.5}, {"id": 62263, "Date": "2017/06/09", "State": "ND", "Metric": "Crop Loss ($M)", "Value": 2.0}, {"id": 64130, "Date": "2019/04/25", "State": "LA", "Metric": "Crop Loss ($M)", "Value": 1.6}, {"id": 65340, "Date": "2020/02/05", "State": "MS", "Metric": "Crop Loss ($M)", "Value": 1.4}, {"id": 61718, "Date": "2017/04/30", "State": "MS", "Metric": "Crop Loss ($M)", "Value": 1.0}, {"id": 63531, "Date": "2018/08/06", "State": "NE", "Metric": "Crop Loss ($M)", "Value": 1.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
