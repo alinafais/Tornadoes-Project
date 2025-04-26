@@ -128,7 +128,7 @@ body {
   }
 
   .article {
-    padding: 20px 20px 40px;
+    padding: 0px 0px 0px;
     font-family: Georgia, serif;
     color: #222;
     background-color: #fff;
@@ -142,7 +142,7 @@ body {
 
   
   .article p {
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     font-size: 1.05rem;
     line-height: 2;  /* Increased line height for breathing space */
     letter-spacing: 0.1px;
